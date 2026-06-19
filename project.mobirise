@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "Pancakeswap-pancake",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "6.1.12",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/pancake-favicon.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://Pancakeswap-pancake.github.io/sitemap.xml/",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://Pancakeswap-pancake.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "mbrsiteDomain": "qxlbiwthpl",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "6.1.12"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "PancakeSwap - Decentralized Exchange",
+        "meta_descr": "PancakeSwap, the Leading Decentralized Exchange on BNB Chain, Offering Token Swaps, Staking, Yield Farming, and DeFi Services.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://pancakeswap.finance/\"><img src=\"@PROJECT_PATH@/assets/images/pancakeswap.png\" alt=\"pancakeswap\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "vmZ1fXqPbd",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b><a href=\"https://pancakeswap.finance/\" class=\"text-primary\">PancakeSwap</a> - Decentralized Exchange</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b><a href=\"https://pancakeswap.finance/\" class=\"text-primary\">PancakeSwap</a>: A Leading Decentralized Exchange in the DeFi Ecosystem</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Introduction :&gt;&nbsp;</b><br><a href=\"https://pancakeswap.finance/\" class=\"text-primary\">PancakeSwap</a> is one of the most popular decentralized exchanges (DEXs) in the cryptocurrency industry. Built initially on the Binance Smart Chain (now BNB Chain), the platform allows users to trade digital assets directly from their wallets without relying on centralized intermediaries. Since its launch in 2020, PancakeSwap has evolved into a comprehensive decentralized finance (DeFi) ecosystem offering trading, staking, yield farming, lotteries, NFT marketplaces, and more.<br><br><b>What Is PancakeSwap?<br></b><a href=\"https://pancakeswap.finance/\" class=\"text-primary\">PancakeSwap </a>is a decentralized exchange that uses an Automated Market Maker (AMM) model instead of traditional order books. Rather than matching buyers and sellers, the platform relies on liquidity pools funded by users who deposit cryptocurrency assets. Traders can swap tokens instantly using these liquidity pools.<br><br>The platform's native utility and governance token is CAKE, which plays a central role in the ecosystem. CAKE holders can participate in governance decisions, earn rewards through staking, and access various platform features.<br><br><b>How PancakeSwap Works :/</b><br><a href=\"https://pancakeswap.finance/\" class=\"text-primary\">PancakeSwap </a>operates through smart contracts deployed on blockchain networks. Users connect compatible cryptocurrency wallets such as MetaMask or Trust Wallet and interact directly with the protocol.<br>The platform functions through several key components:<br><br><b>Token Swaps :/<br></b>Users can exchange one cryptocurrency token for another without creating an account or undergoing identity verification. Transactions are executed through liquidity pools, enabling fast and efficient trading.<br><b>Liquidity Pools :/</b><br>Liquidity providers contribute token pairs to pools and receive Liquidity Provider (LP) tokens in return. These LP tokens represent their share of the pool and allow them to earn a portion of the trading fees generated on the platform.<br><b>Yield Farming :/</b><br>Yield farming enables users to stake LP tokens in dedicated farms to earn additional CAKE rewards. This feature has been a major driver of PancakeSwap's popularity among DeFi investors seeking passive income opportunities.<br><b>Syrup Pools :/<br></b>Syrup Pools allow users to stake CAKE tokens and earn additional CAKE or other partner tokens. This provides a relatively simple way for users to generate rewards without participating in liquidity provision.<br><br><b>Key Features of PancakeSwap ://<br>Low Transaction Fees :/</b><br><a href=\"https://pancakeswap.finance/\" class=\"text-primary\">PancakeSwap </a>biggest advantages is its relatively low transaction costs compared to some competing decentralized exchanges. This makes it attractive for both small and large traders.<br><b>Multi-Chain Support :/</b><br>While PancakeSwap originated on BNB Chain, it has expanded to support multiple blockchain networks, increasing accessibility and interoperability across the DeFi ecosystem.<br><b>Decentralized Governance :/<br></b>CAKE token holders can vote on proposals that influence the platform's development, fee structures, and future upgrades. This governance model promotes community participation and decentralization.<br><b>NFT Marketplace :/</b><br><a href=\"https://pancakeswap.finance/\" class=\"text-primary\">PancakeSwap </a>offers a marketplace where users can buy, sell, and trade non-fungible tokens (NFTs). This expands the platform beyond traditional token trading.<br><br><b>Prediction Markets and Gaming Features<br></b>The platform has introduced interactive features such as prediction markets, lotteries, and gamified experiences that encourage community engagement.<br><br><b>Benefits of Using PancakeSwap :/<br>1. Non-custodial trading:</b> Users maintain full control of their funds.<br><b>2. Global accessibility:</b> Anyone with a compatible wallet and internet connection can participate.<br><b>3. Passive income opportunities:</b> Staking and farming options enable users to earn rewards.<br><b>4. Transparency:</b> All transactions and smart contract activities are recorded on public blockchains.<br><b>5. Diverse ecosystem:</b> Users can access trading, staking, NFTs, and other DeFi services from a single platform.<br><br><b>Risks and Challenges</b><br>Despite its advantages, <a href=\"https://pancakeswap.finance/\" class=\"text-primary\">PancakeSwap </a>carries certain risks:<br><b>.&nbsp; </b>Smart contract vulnerabilities may expose users to potential security issues.<br><b>.&nbsp; </b>Cryptocurrency markets are highly volatile.<br><b>.&nbsp; </b>Impermanent loss can affect liquidity providers.<br><b>.&nbsp; </b>Regulatory changes may impact DeFi platforms globally.<br><b>.&nbsp; </b>Users are responsible for securing their private keys and wallets.<br><br><b>The Future of PancakeSwap<br></b>As decentralized finance continues to evolve, <a href=\"https://pancakeswap.finance/\" class=\"text-primary\">PancakeSwap </a>remains focused on expanding its ecosystem, improving user experience, and increasing cross-chain compatibility. The platform's ongoing development efforts aim to strengthen its position as a leading decentralized exchange while supporting broader adoption of blockchain-based financial services.<br><br><b>Conclusion ://</b><br><a href=\"https://pancakeswap.finance/\" class=\"text-primary\">PancakeSwap </a>has established itself as one of the most influential decentralized exchanges in the DeFi sector. By offering token swaps, liquidity provision, yield farming, staking, and NFT services within a decentralized framework, it provides users with a comprehensive gateway to decentralized finance.<br><br> While investors should carefully consider the risks associated with cryptocurrency and DeFi platforms, PancakeSwap continues to play a significant role in shaping the future of blockchain-based financial innovation.</p>\n              </div>\n            </div>\n            \n            \n            \n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "vmZ1h5jZsp",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
